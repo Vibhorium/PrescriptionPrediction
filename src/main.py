@@ -18,7 +18,7 @@ import os
 from WordSegmentation import wordSegmentation, prepareImg
 
 imgFiles = os.listdir('../data/')
-
+print(type(imgFiles))
 
 def main():
     """reads images from data/ and outputs the word-segmentation to out/"""
