@@ -13,7 +13,7 @@ import numpy as np
 from PIL import Image
 from WordSegmentation import wordSegmentation, prepareImg
 
-
+linewise_strings=[]
 # import image
 def getsegmented(path):
     image = cv2.imread(path)
@@ -48,7 +48,7 @@ def getsegmented(path):
         x, y, w, h = cv2.boundingRect(ctr)
 
         # Getting ROI
-        roi = image[y:y + h + 10 , x:x + w]
+        roi = image[y:y + h , x:x + w]
         line_imgs.append(roi)
         filename = str(i) + '.png'
         cv2.imwrite(line_path + filename, roi)
@@ -251,6 +251,7 @@ def infer(model, fnImg):
     (recognized, probability) = model.inferBatch(batch, True)
     print('Recognized:', '"' + recognized[0] + '"')
     print('Probability:', probability[0])
+    return recognized[0]
 
 
 def main2():
@@ -299,9 +300,12 @@ def main2():
             print(f)
             imgFolder = os.listdir('../out/' + f + '/')
             imgPath = '../out/' + f + '/'
+            s=""
             for j in range(0, len(imgFolder) - 1):
                 print(imgFolder[j])
-                infer(model, imgPath + str(imgFolder[j]))
+                s=s+infer(model, imgPath + str(imgFolder[j]))
+                s=s+" "
+            linewise_strings.append(s)
         """
         for i in range(0, len(imgFiles)):
             print(imgFiles[i])
@@ -314,6 +318,12 @@ def main2():
 
 
 if __name__ == '__main__':
-    line_imgs = getsegmented('../fullimg/7.jpg')
+    line_imgs = getsegmented('../fullimg/15.jpeg')
     main()
     main2()
+    k=0
+    for i in range(0,len(linewise_strings)):
+        if len(linewise_strings[i]) > 5:
+            print("Line "+str(k)+":",end=' ')
+            print(linewise_strings[i])
+            k=k+1
