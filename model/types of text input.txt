@@ -1,0 +1,29 @@
+- x3d = 3 days continuously from now
+- x3 days
+- x10 wks/weeks
+- MWF, TTS =alternate days
+- OD = once a day, bd/bid = twice a day(12 hours gap) , tid = thrice a day(8 hours gap), qd/qid = 4 times a day (6 hours gap)
+- empty stomach = early morning (before breakfast)
+- every night
+- before/after meal
+- for 10(X) days
+- thrice/twice/once a day
+- every X hours
+- every X days
+- once/twice/thrice a week
+- tab/cap(capsule) /mg/ tbsp/ tsp/ sp
+
+- 1-0-0 = once a day
+- 1-0-1 = twice a day (morning, night)
+- 1-1-0 = twice (moring, afternoon)
+
+- qd = every day
+- od, bid, tid, qid
+- qam = every morning
+- qpm = every night
+- q2h = every 2 hours
+- qod = every other day
+
+- prn / SOS = as needed
+- pc = after meals
+- ac = before meals
