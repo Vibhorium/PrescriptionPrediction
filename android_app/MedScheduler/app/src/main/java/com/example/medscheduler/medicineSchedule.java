@@ -1,6 +1,8 @@
 package com.example.medscheduler;
 
-public class medicineSchedule {
+import java.io.Serializable;
+
+public class medicineSchedule implements Serializable {
     String name = "NA";
     int till_x_days = 1000;
     int specifications = 0; //2 = after meal, 1= before meal, 0= no specification
@@ -11,4 +13,19 @@ public class medicineSchedule {
     boolean afternoon = false;
     boolean evening =false;
     boolean night = false;
+
+    public String toString(){
+        String x="\n";
+        x+="name" + name +"\n";
+        x+="till_x_days" + till_x_days+"\n";
+        x+="specifications" + specifications+"\n";
+        x+="weekly_frequency" + weekly_frequency+"\n";
+        x+="Sos" + Sos+"\n";
+        x+="empty_stomach"+ empty_stomach+"\n";
+        x+="morning"+ morning + "\n";
+        x+="afternoon"+afternoon+"\n";
+        x+="evening"+evening+ "\n";
+        x+="night"+night+"\n";
+        return x;
+    }
 }
