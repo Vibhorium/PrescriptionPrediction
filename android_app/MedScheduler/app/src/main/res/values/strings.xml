@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MedScheduler</string>
+    <string name="title_activity_notify_service">notifyService</string>
 </resources>

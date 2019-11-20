@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profilePage"></activity>
+        <activity
+            android:name=".notifyService"
+            android:label="@string/title_activity_notify_service"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".profilePage" />
         <activity android:name=".mainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".schedulerActivity"></activity>
+        <activity android:name=".schedulerActivity" />
     </application>
 
 </manifest>

@@ -2,6 +2,8 @@ package com.example.medscheduler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +21,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class schedulerActivity extends AppCompatActivity {
@@ -36,7 +39,7 @@ public class schedulerActivity extends AppCompatActivity {
         medicineSchedule[] Medicines = (medicineSchedule[]) getIntent().getSerializableExtra("Medicines");
         // for loop = object call outerBox.addView(getMedicine(  "   obj ", this));
 
-        for (int i=0; i<Medicines.length; i++){
+        for (int i = 0; i < Medicines.length; i++) {
             outerBox.addView(getMedicine(Medicines[i], this));
         }
 
@@ -63,7 +66,7 @@ public class schedulerActivity extends AppCompatActivity {
 
                 medicineSchedule[] Meds = saveSchedule();
 
-                for(int i=0; i<Meds.length; i++) {
+                for (int i = 0; i < Meds.length; i++) {
                     Log.i("Medicines", Meds[i].toString());
                 }
 
@@ -73,6 +76,21 @@ public class schedulerActivity extends AppCompatActivity {
             }
         });
     }
+        private void alarmMethod(){
+            Intent myIntent = new Intent(this , notifyService.class);
+            AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
+            PendingIntent pendingIntent = PendingIntent.getService(this, 0, myIntent, 0);
+
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(Calendar.SECOND, 0);
+            calendar.set(Calendar.MINUTE, 0);
+            calendar.set(Calendar.HOUR, 9);
+            calendar.set(Calendar.AM_PM, Calendar.AM);
+            calendar.add(Calendar.DAY_OF_MONTH, 1);
+
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 1000*60*60*24 , pendingIntent);
+        }
+
 
     public LinearLayout getMedicine(medicineSchedule M, Context context){
         LinearLayout ll = new LinearLayout(context);
