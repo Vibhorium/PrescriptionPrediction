@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "groovy-age-251914",
+  "private_key_id": "72d209c10cd3a43c4e92ed853e9a3bc74997fd00",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQC0HMHlbkXlr1PZ\nIdXMFeAv1e9Wln3eF5+q+do7iImEQioyBX3i7cxlLzCpOR2jBhI3+yvEb8rp7zbu\nFH6MppqzBocb0oCtO/iU4MA65DSisEPenqwGw7Fxa2Wj6myFtPURdeLoL3gTEPCn\nP9UZ2jdIMe4ceF/Wbc0QQliBq367AyOXvJ/JLiQVshbNZhelKbvbjnhuoORDNn1o\np2YnAQSalbDQhutt0ZQoLe4PkRZxHf78sKNMOZnrqlThMKSummR6bAAyhZ8YwMrn\nEZyUkliPYhT65VHcujJPyYsfgTLD0xJVaamBtDAWjAqwckRPmSBiRU3gwPxHzDgV\ngpknLfTxAgMBAAECgf9pSyaIMR89c8dZzewtIWsB4Warq5mJs9eXkC6fG5E66Wwv\nwDt5rNzyprdb4TDwd8+yWKWbyCm9MbZCNS5NR+bkzK3sF7rJGaDQIRsji2zBGdVa\nn92DVtlf5PWPY1qm82+DLoJS/gmn1Kvbb/d7x1uxPlSeN1ZPsYEZIgV71xmdkn3V\nmEpnZBUoC1DJKpDEirpVuGOy6KaeGz76AdOSAPxfU9aJ4lwk0M09zMS89+Y9dDAl\nqDih4fwVMwDeVq9WWrawEgiMlkgaQDRAFZZZ3sakxh/rX0/O0DRJ3TV9AkjrdfWa\nadH8E/IkOj6X/0G9x1LGPGWWOmjMgu5eXgHiPeECgYEA67iqaih+O49WQwa1ZVTg\nEJfpe15UT7H0+gz4e2qxkDAvhLDOD65fVyFw8Y0vuLY23II28uoAlFK5ws8+rPsF\ny5QtQFlPmPdlRYunm4xn+ipi/4nByvqJxDiy5FIh6D3R08r4/ZwsdWajiVg5J31L\nohRGZPstOnQUlRgzat75dqECgYEAw5tnebsgqUKumV+vQJF2EUzVFQ37wLMTA+Yv\nSJaQksOMT8aJOEJuL5O1VNKPmcoGs2e+9ziBNgbcQMAxPNsa91vbtK4EAbIp+Pu/\nbdJR/jM10EweIWdToUSfLc7LE0pMMUH+xBcGcL8T7Vr+S4Na45NrxW7TKSl2mUyy\nHh0D7FECgYBQROEbJ1DdHVFln6ozqHRokiJ61UNmpBXk9HfFJy7yB8aWq9JvupRS\nylt4lfhzMPF7o4fsrkymNYl2UjZol06A5aOHLyKQ12YQCZ94s5ZQtRBjLljksu4o\n+JnKcEGFoU+LjKm/SuhEzj/QLE/CJ8OSnM7f4jyjlBXSM5yGvwk6IQKBgQCXA08r\np9BbXGO3fSuryaFBUfPfwV/vMVEo3Xj7rWIILHgSzs/5Yy/2Ay8nQTgkHth1gU7p\nRfJbZ4h7ZOWeefmjpoNERmRJeub0lkb/3jP28EpHebx5RXBHPNc3YkNdrSqNjMnH\nUY9jU+FqialxWwO8VoAJeLoFOUGasJ+CqBvzQQKBgA1eKh9/E44HWMPfZXFe2d89\nlycdk72h4SfsHKlR4tsZKG9UtC3SGlqw+U3sOBhkLhF/cQWQCiBgxUvTLIlfRRTQ\nbGy2wNjoikQm8pabaT1xzRgGg5lkmgCicz8hHb42HdqsOeIySMLW0Zi2MXOAJwm3\nmajD89OfglTWq1b56yxN\n-----END PRIVATE KEY-----\n",
+  "client_email": "prescriptionpredicter@groovy-age-251914.iam.gserviceaccount.com",
+  "client_id": "105141645952536185362",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prescriptionpredicter%40groovy-age-251914.iam.gserviceaccount.com"
+}
