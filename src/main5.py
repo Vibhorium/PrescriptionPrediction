@@ -331,7 +331,7 @@ def main2():
 
 
 if __name__ == '__main__':
-    line_imgs = getsegmented('../fullimg/16.jpeg')
+    line_imgs = getsegmented('../fullimg/17.jpeg')
     main()
     main2()
     k=0
@@ -341,20 +341,21 @@ if __name__ == '__main__':
             print("Line "+str(k)+":",end=' ')
             print(linewise_strings[i])
             k=k+1
+    print("")
     print("Applying fuzzy match of drugs to this")
     output = detect_lines_with_medicine.detect_lines_with_medicine(linewise_strings)
     
 #     output = [line, curr_best_drug, curr_best_Score]
     for line in output:
         print(line[0] , " -- detected with drug ", line[1], "with score ", line[2])
-        
+    print("")    
     print("Now doing fuzzy match on common words")
     for line in output:
         print("Sending this to fuzzy match on common words ::: ", line[0])
         fuzzy_output = fuzzy_common_words.replace_with_fuzzy_match(line)
         print("Received :: ", fuzzy_output)
         line[0] = fuzzy_output
-        
+    print("")
     for line in output:
         print(line[0])
         
