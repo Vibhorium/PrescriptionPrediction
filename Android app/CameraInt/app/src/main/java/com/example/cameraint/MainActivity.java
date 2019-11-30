@@ -15,13 +15,20 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.android.volley.Cache;
+import com.android.volley.Network;
 import com.android.volley.NetworkResponse;
 import com.android.volley.ParseError;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.BasicNetwork;
+import com.android.volley.toolbox.DiskBasedCache;
 import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.JsonRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -90,8 +97,9 @@ public class MainActivity extends Activity
         {
             Bitmap photo = (Bitmap) data.getExtras().get("data");
             final String requestBody = getStringImage(photo);
-            Volley.newRequestQueue(this).add(
-                    new JsonRequest<JSONArray>(Request.Method.POST, "url/", null,
+            RequestQueue requestQueue= Volley.newRequestQueue(this);
+            JsonRequest jsonRequest=
+                    new JsonRequest<JSONArray>(Request.Method.POST, "http://10.0.2.2:5000/prepareSchedule", null,
                             new Response.Listener<JSONArray>() {
                                 @Override
                                 public void onResponse(JSONArray response) {
@@ -131,7 +139,25 @@ public class MainActivity extends Activity
                                 return Response.error(new ParseError(je));
                             }
                         }
-                    });
+                    };
+            jsonRequest.setRetryPolicy(new RetryPolicy() {
+                @Override
+                public int getCurrentTimeout() {
+                    return 50000;
+                }
+
+                @Override
+                public int getCurrentRetryCount() {
+                    return 50;
+                }
+
+                @Override
+                public void retry(VolleyError error) throws VolleyError {
+
+                }
+            });
+            requestQueue.start();
+            requestQueue.add(jsonRequest);
         }
     }
 
@@ -139,7 +165,9 @@ public class MainActivity extends Activity
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
         byte[] imageBytes = baos.toByteArray();
+        Log.e("bytes", imageBytes.toString());
         String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+        Log.e("base64string", encodedImage);
         return encodedImage;
     }
 }
