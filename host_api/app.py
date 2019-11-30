@@ -19,17 +19,39 @@ path = "test_img1.jpeg"
 fuzzyMatching.initialise_data()
 
 
+def convert_and_save(b64_string):
+
+#     b64_string += '=' * (-len(b64_string) % 4)  # restore stripped '='s
+#     string = b'{b64_string}'
+#     with open("imageToSave.jpeg", "wb") as fh:
+#         fh.write(base64.decodebytes(string))
+
+    with open("imageToSave.jpeg", "wb") as fh:
+#         fh.write(base64.decodebytes(b64_string.encode()))
+        fh.write(base64.decodebytes(b64_string))
+
+
 @app.route('/prepareSchedule', methods=['GET', 'POST'])   #change it to post and take image from body
 def prepSchedule():
     
     
 #     input_image is to be taken from the body of request for POST request
     if request.method == 'POST':
-        base64Stream = request.get_data()
-        input_image = base64.decodestring(base64Stream)
-    else:
+
+#         base64Stream = request.get_data()
+#         print(vase64Stream , file=sys.stderr)
+#         input_image = base64.decodestring(base64Stream)
+        
+#         data = request.get_json()
+#         img_data = data['img']
+        img_data = request.get_data() #for body
+        
+        print(img_data, file=sys.stderr)
+        
+        convert_and_save(img_data)
+        path = "imageToSave.jpeg"
         with io.open(path, 'rb') as image_file:
-             input_image = image_file.read()
+            input_image = image_file.read()
     
     vision_api_output =  visionAPI.detect_document(input_image)
     print(vision_api_output , file=sys.stderr)
