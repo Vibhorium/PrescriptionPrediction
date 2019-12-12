@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb715b05-6927-48ec-9635-92f0e9dda3a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Android app/CameraInt/app/src/main/java/com/example/cameraint/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Android app/CameraInt/app/src/main/java/com/example/cameraint/MainActivity.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb715b05-6927-48ec-9635-92f0e9dda3a7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Android app/CameraInt/app/src/main/java/com/example/cameraint/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
+            <state relative-caret-position="2176">
+              <caret line="128" column="73" lean-forward="true" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,87 +53,6 @@
               <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrescriptionPrediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrescriptionPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="Android app" type="462c0819:PsiDirectoryNode" />
-              <item name="CameraInt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="cameraint" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -145,7 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/CameraInt" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
@@ -173,20 +90,29 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3296131" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
+      <window_info id="Resources Explorer" weight="0.3296131" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -197,13 +123,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Android app/CameraInt/app/src/main/java/com/example/cameraint/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        <state relative-caret-position="2176">
+          <caret line="128" column="73" lean-forward="true" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

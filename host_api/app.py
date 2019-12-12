@@ -30,6 +30,10 @@ def convert_and_save(b64_string):
 #         fh.write(base64.decodebytes(b64_string.encode()))
         fh.write(base64.decodebytes(b64_string))
 
+		
+@app.route('/', methods=['GET', 'POST'])
+def Hello():
+	return "Helloooo"
 
 @app.route('/prepareSchedule', methods=['GET', 'POST'])   #change it to post and take image from body
 def prepSchedule():
