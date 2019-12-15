@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="app_name">MyNotification</string>
+<string name="hello_world">Hello world!</string>
+<string name="button_title">Get Bananas</string>
+<string name="notification_title">Bananas</string>
+<string name="notification_subject">Get them while they\'re fresh!</string>
+<string name="ticker_count_label">Number of notifications\:</string>
+
+</resources>
